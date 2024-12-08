@@ -1,0 +1,61 @@
+ # What is the default value assigned to array elements in C#? 
+   =>zero is a default
+_________________________________________________________________________________________________________
+
+ # What is the difference between Array.Clone() and Array.Copy()?
+  _________________________________________________________________________________________
+  | Array.clone()                            |Array.copy()                                 |
+  |__________________________________________|____________________________________________ |
+  | - Allow copy all elements of array       | - Allow copy Specific elements of array     |
+  | -create new allocation with distenct     | - Require a Pre-allocated destenation array |
+  |   with distenct address                  |                                             |
+  |  -Use to copy Dublicate Two arrays       | -Use to copy specific elements or range     |
+  |__________________________________________|_____________________________________________|
+_________________________________________________________________________________________________________
+
+
+  #What is the difference between GetLength() and Length for multidimensional arrays? 
+   => length: Gives the total number of elements in the array (all dimensions combined).
+   => GetLength(int dimension): Returns the size of a specific dimension.    
+    Ex. Arr[3,3] 
+     Arr.lenght= 3*3 =9
+     Arr.getLength(0)=3   number of rows
+     Arr.getLength(1)=3   number of columns     
+_________________________________________________________________________________________________________
+  
+
+ #Question: What is the difference between Array.Copy() and Array.ConstrainedCopy()?
+
+    _________________________________________________________________________________________
+  |            Array.ConstrainedCopy()        |          Array.copy()                       |
+  |__________________________________________ |____________________________________________ |
+  |  - If occure error in operation copy      | - If occure error in operation copy         |
+  |     no update modification                |   update modification                       |
+  |  - slow and More safty                    |  -Fast and less safty                       |
+  |  - use when you need robust safety        |  -Use for general, simple copying           |
+  |      guarantees                           |                                             |
+  |__________________________________________ |_____________________________________________|
+_________________________________________________________________________________________________________
+
+
+ #Why is foreach preferred for read-only operations on arrays? 
+   => Because it iterate over all elements in an array without index or worrying about bounds.
+_________________________________________________________________________________________________________
+
+ # Why is input validation important when working with user inputs?
+    =>To avoid invalid input which cause runtime exceptions
+_________________________________________________________________________________________________________
+
+ # When should you prefer a switch statement over if-else?
+  => Because switch starment is more readable and fasetr from If- else
+_________________________________________________________________________________________________________
+ What is the time complexity of Array.Sort()?
+  => There are a lot of Sort algorithms but not use specific algorithm because each algorithm has pros and cons.
+     Compiler choice suitable algorithm for each case
+      Quick Sort:         TC= O(n*n)                      SP=O(log n))
+      Merge Sort:         TC= O(n*log(n))                 SP=O(n*n)
+      Selection Sort:     TC= O(n*n)                      SP=O(1)
+    
+
+ 
+
